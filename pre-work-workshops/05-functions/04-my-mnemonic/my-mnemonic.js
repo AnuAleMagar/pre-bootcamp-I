@@ -2,21 +2,21 @@
 function myMnemonic(string1,string2,string3,string4){
 let str=''
 if(string1!=undefined){
-    str+=string1[0]
+    str+=string1.toString()[0]
 }
 if(string2!=undefined){
-    str+=string2[0]
+     str+=string2.toString()[0]
     
 }
 if(string3!=undefined){
-    str+=string3[0]
+     str+=string3.toString()[0]
   
 }
 if(string4!=undefined){
-    str+=string4[0]
+   str+=string4.toString()[0]
  
 }
  return str;
 }
 
-console.log(myMnemonic(''))
+console.log(myMnemonic(123))
