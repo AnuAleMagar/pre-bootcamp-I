@@ -1,13 +1,13 @@
 // YOUR CODE BELOW
-function getMax(f, s, a){
- if (f > s) {
-    if (f > a) {
-        return f;
+function getMax(firstNum, secondNum, thirdNum){
+ if (firstNum > secondNum){
+    if (firstNum > thirdNum) {
+        return firstNum;
     } 
-    return a;
-} else if (s > a) {
-    return s;
-}else {
-    return a;
-}
+    return thirdNum;
+ } else if (secondNum > thirdNum) {
+    return secondNum;
+ }else {
+    return thirdNum;
+ }
 }
