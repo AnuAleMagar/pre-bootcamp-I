@@ -14,7 +14,6 @@ on.
 let bond = '007';
 
 function oddJob() {
-  debugger;
   let AgentinScope = (bond === '007');
   let prediction =true; // YOUR BOOLEAN PREDICTION HERE
 
