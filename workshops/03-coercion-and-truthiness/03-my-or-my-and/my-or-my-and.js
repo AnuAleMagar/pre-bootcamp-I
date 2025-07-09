@@ -22,28 +22,28 @@ function myAnd(a,b,c){
 if(a){
   if(b){
     if(c){
-        return true
+        return c
     }else{
-        return false
+        return c
     }
   }else{
-    return false
+    return b
   }
 }else{
-    return false;
+    return a;
 }
 }
 function myOr(a,b,c){
     if(a){
-        return true;
+        return a;
     }
     if(b){
-        return true
+        return b
     }
     if(c){
-        return true
+        return c
     }
-    return false;
+    return c;
 }
 console.log(myAnd(1, 'apples', true) === (1 && 'apples' && true)
 )
