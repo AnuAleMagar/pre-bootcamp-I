@@ -52,11 +52,16 @@ let transactions = [
   }
 ];
 function lastFridayNight(arr){
+ 
     let sum=0;
-    for(let i=0;i<arr.length;i++
-    ){
-        sum+=arr[i].amount;
+    if(Array.isArray(arr)){
+      for(let eachtrans of arr){
+      sum+=eachtrans.amount
+    }}else{
+       sum+=arr.amount
     }
-  return sum;
+    
+  return (sum);
 }
 console.log(lastFridayNight(transactions))
+console.log(lastFridayNight({name: 'flowers', amount: 10}))
